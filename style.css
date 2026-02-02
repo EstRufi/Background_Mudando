@@ -4,11 +4,41 @@
     box-sizing: border-box;
 }
 
+:root{
+    --cor: rgb(88, 14, 14);
+}
+
 body{
     height: 100dvh;
+    background-color: var(--cor);
+}
+
+header{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 16px;
+    gap: 5px;
+    padding: 10px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+input{
+    height: 25px;
+    width: 300px;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    padding: 2px;
 }

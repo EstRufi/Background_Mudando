@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer></script>
+    <!-- o defer é para falar para o navegador
+        esperar que o momento certo é para ativar
+        o js mas por inquanto espera -->
     <title>Document</title>
 </head>
 <body>
-    <input type="text">
-    <button>Trocar cor</button>
+    <header>
+        <h1>Vamos brincar?</h1>
+        <h2>Escreva a baixo uma cor em Ingles</h2>
+        <h2>ou</h2>
+        <h2>Escreva em formato hexadecimal</h2>
+        <p>Ex: #123244</p>
+    </header>
+    <main>
+        <input type="text" id="corDoUsuario">
+        <button id="botaoTrocarCor">Trocar cor</button>
+    </main>
 </body>
 </html>
