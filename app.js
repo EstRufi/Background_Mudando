@@ -10,10 +10,20 @@ const btnTrocaCor = document.getElementById("botaoTrocarCor")
 function trocaCor(){
     const corUsuario = document.getElementById("corDoUsuario").value
     // value é o valor no caso é o testo
-    document.documentElement.style.setProperty("--cor",corUsuario)
-    // ai esta dizendo para pegar no style o variavel 
-    //cor e escrever quando o usuario escrever
+    if (corUsuario == "rosa"){
+        document.documentElement.style.setProperty("--cor","pink")
+    }else if(corUsuario == "amarelo"){
+        document.documentElement.style.setProperty("--cor","yellow")
+    }else if(corUsuario == "verde"){
+        document.documentElement.style.setProperty("--cor","green")}
+    else{
+        document.documentElement.style.setProperty("--cor",corUsuario)
+        // ai esta dizendo para pegar no style o variavel 
+        //cor e escrever quando o usuario escrever
+    }
+    
 }
+
 
 btnTrocaCor.addEventListener("click", trocaCor)
 
