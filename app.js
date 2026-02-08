@@ -1,6 +1,8 @@
 "user strict"
 
 const btnTrocaCor = document.getElementById("botaoTrocarCor")
+const verdeClaro = document.getElementById("verdeC")
+const vermelhoClaro = document.getElementById("vermelhoC")
 // O que isso Faz?
 /* Ele quer dizer oq?
     ele está dizendo que no documento(html)
@@ -16,6 +18,9 @@ function trocaCor(){
         document.documentElement.style.setProperty("--cor","yellow")
     }else if(corUsuario == "verde"){
         document.documentElement.style.setProperty("--cor","green")}
+        else if(corUsuario == "vermelho"){
+            document.documentElement.style.setProperty("--cor", "red")
+        }
     else{
         document.documentElement.style.setProperty("--cor",corUsuario)
         // ai esta dizendo para pegar no style o variavel 
@@ -25,6 +30,17 @@ function trocaCor(){
 }
 
 
+
+function verde (){
+    document.documentElement.style.setProperty("--cor", "lightgreen")
+}
+
+function verme (){
+    document.documentElement.style.setProperty("--cor", "rgb(240, 142, 142)")
+}
+
+vermelhoClaro.addEventListener("click", verme)
+verdeClaro.addEventListener("click", verde)
 btnTrocaCor.addEventListener("click", trocaCor)
 
 /*
